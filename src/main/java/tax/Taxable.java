@@ -1,14 +1,14 @@
 package tax;
 
 public interface Taxable {
-public void getSimpleTaxRate() ;
+double getSimpleTaxRate() ;
 
 
-   public void getMiddleTaxRate();
+    double getMiddleTaxRate();
 
 
 
-    public void getUpperTaxRate();
+    double getUpperTaxRate();
 
 
 

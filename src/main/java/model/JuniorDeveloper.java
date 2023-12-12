@@ -2,6 +2,6 @@ package model;
 
 public class JuniorDeveloper extends Developer{
     public JuniorDeveloper(int id, String name, double salary, model.Experience experience) {
-        super(id, name, salary, experience);
+        super(id, name, salary, experience.JUNIOR);
     }
 }

@@ -1,23 +1,24 @@
 package tax;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
+@Component
 
-@RestController
 public class DeveloperTax implements Taxable{
 
 
     @Override
-    public void getSimpleTaxRate() {
-
+    public double getSimpleTaxRate() {
+        return 15;
     }
 
     @Override
-    public void getMiddleTaxRate() {
-
+    public double getMiddleTaxRate() {
+        return 20;
     }
 
     @Override
-    public void getUpperTaxRate() {
-
+    public double getUpperTaxRate() {
+        return 25;
     }
 }
